@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background: url("/src/img/coffe2.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+* {
+ 
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

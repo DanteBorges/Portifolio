@@ -1,26 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jost", sans-serif;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-/* 
- 
 
 /* navbar style start  */
 
@@ -30,16 +10,9 @@ li {
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    rgba(71, 60, 60, 0.3) 0px 30px 60px -30px;
 }
 
-.logo {
-  display: grid;
-  /* background-color: #3b5998; */
-  grid-column: 2/3;
-  justify-content: start;
-  align-items: center;
-}
 
 .menu-link {
   grid-column: 3/4;

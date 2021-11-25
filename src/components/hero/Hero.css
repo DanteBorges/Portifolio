@@ -1,0 +1,29 @@
+.background {
+
+}
+
+.container {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  width: 40vw;
+  margin-left: 10vw;
+  margin-top: 100px;
+}
+
+.name,.another_words {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.about {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+
