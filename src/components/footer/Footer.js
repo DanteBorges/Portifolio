@@ -1,7 +1,8 @@
 import {  FaInstagram, FaLinkedin,FaLinkedinIn } from 'react-icons/fa'
 import  './Footer.css'
 
-function Footer() {
+const Footer = () => {
+
   return (
     <footer className="footer">
       <ul className="social_list">

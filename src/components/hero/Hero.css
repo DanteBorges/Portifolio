@@ -1,13 +1,10 @@
-.background {
-
-}
 
 .container {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   width: 40vw;
   margin-left: 10vw;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .name,.another_words {

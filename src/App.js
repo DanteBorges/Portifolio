@@ -1,8 +1,9 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from "./components/footer/Footer";
+import About from './components/about/About';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Hero />
       </Route>
       <Route path="/about">
+        <About/>
       </Route>
       <Route path="/portfolio">
       </Route>
