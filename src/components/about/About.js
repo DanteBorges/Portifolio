@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { FaVuejs,FaReact,FaPhp,FaGitAlt,FaLaravel } from "react-icons/fa";
+import Myprofile from "../../img/Myprofile.jpg"
 
 const About = () => {
   return (
@@ -31,7 +32,9 @@ const About = () => {
         </li>
     </ul>
       </div>
-    
+      <div >
+      <img src={Myprofile} alt={"myself photo"} className="my_profile"/> 
+      </div>
 
 
     </div>

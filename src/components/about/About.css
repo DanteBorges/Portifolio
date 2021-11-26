@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5vh;
 }
 .about_me {
   color: white;
@@ -16,12 +17,21 @@
 
 .container_icon {
   display: flex;
+
   justify-content: space-between;
   width: 60vw;
   margin-left: 7vw;
   margin-top:2vw ;
+
 }
 
 .container_icon svg {
   font-size: 3em;
+
+}
+
+.my_profile{
+  margin-top: 2em;
+border-radius: 100%;
+width: 10em;
 }
