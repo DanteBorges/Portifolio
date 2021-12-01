@@ -1,21 +1,23 @@
 import React from "react";
 import "./Portifolio.css";
-import ImageSlider from '../sliderbar/ImageSlider.js';
-import { SliderData } from '../sliderbar/SliderData.js'
+import ImageSlider from "../sliderbar/ImageSlider.js";
+import { SliderData } from "../sliderbar/SliderData.js";
 
 import { FaGithub } from "react-icons/fa";
 
 const portifolio = () => {
   return (
     <div>
-      <div className="background_icon">
-        <div className="icon_github">
-          <FaGithub />
+      <a href="https://github.com/DanteBorges" target="_blank">
+        <div className="background_icon">
+          <div className="icon_github">
+            <FaGithub />
+          </div>
         </div>
-      </div>
+      </a>
 
       <div className="containers_repository">
-      <ImageSlider slides={SliderData} />
+        <ImageSlider slides={SliderData} />
       </div>
     </div>
   );

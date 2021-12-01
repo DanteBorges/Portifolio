@@ -1,3 +1,6 @@
+* a{
+      text-decoration: none;
+  }
 .icon_github {
   display: flex;
   justify-content: center;
@@ -14,12 +17,7 @@
   justify-content: center;
   align-items: center;
 }
-.icon_github:hover {
-  background-color: #ffbb33;
-  border: #ffbb33;
-}
 
-.containers_repository {
-  border: 2px solid brown;
-}
+
+
 
