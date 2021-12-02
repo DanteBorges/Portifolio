@@ -17,7 +17,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.icon_github:hover {
+  background-color: #ffbb33;
+  border: #ffbb33;
+}
 
 
 

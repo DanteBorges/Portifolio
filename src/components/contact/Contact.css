@@ -1,0 +1,33 @@
+.container_border {
+  margin-top: 50px;
+  width: 40vw;
+  height: 60vh;
+  margin-left: 30vw;
+  margin-top: 50px;
+  background-image: url("https://thumbs.gfycat.com/FakeHighEmeraldtreeskink-size_restricted.gif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.container_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_form {
+  margin-left: 15vw;
+  color: white;
+  font-size: 2;
+  font-weight: 500;
+  padding-bottom: 2vh;
+}
+.name_form {
+
+}
+
+.name_form::placeholder {
+  color: gray;
+  font-size: 2;
+  font-weight: 500;
+}

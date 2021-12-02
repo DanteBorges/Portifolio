@@ -11,7 +11,7 @@ const portifolio = () => {
       <a href="https://github.com/DanteBorges" target="_blank">
         <div className="background_icon">
           <div className="icon_github">
-            <FaGithub />
+            <FaGithub color="black"/>
           </div>
         </div>
       </a>
