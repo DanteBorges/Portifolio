@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { SliderData } from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./Slider.css";
-import { Link } from "react-router-dom";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -40,7 +39,6 @@ const ImageSlider = ({ slides }) => {
                 />
                 <div className="container_text">
                   <div class="container">
-                    <div class="background-img">
                       <div class="box">
                         <div class="content">
                           <h2 className=""> {slide.title}</h2>
@@ -48,7 +46,6 @@ const ImageSlider = ({ slides }) => {
                             <a>{slide.descript}</a>
                           </p>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>

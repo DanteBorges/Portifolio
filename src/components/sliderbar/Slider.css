@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .slider {
   display: flex;
   position: relative;
@@ -11,9 +14,9 @@
 }
 
 .image {
-  width: 800px;
-  height: 500px;
-  margin-left: 150px;
+  width: 70vh;
+  height: 50vh;
+  margin-left: 160px;
   border-radius: 10px;
 }
 
@@ -52,43 +55,28 @@
 
 /* o title */
 
-
-
-
-body {
-  background-color: #a38068;
-}
-
-.background-img {
-  height: 400px;
-  width: 500px;
-}
-
 .content h2 {
   font-size: 19px;
 }
 
 .box {
   position: absolute;
-  top: 60%;
-  left: 40%;
+  top: 250px;
+  left: 400px;
   transform: translate(-60%, -60%);
-  height: 500px;
-  width: 500px;
+  height: 31.25rem;
+  width: 37.5rem;
   background: #977a6da6;
-  box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 20px 50px rgb(44, 28, 10);
   border: 2px solid #e7a875;
   color: white;
   border-radius: 10px;
-
 }
 
 .box:before {
   content: "";
   position: absolute;
-  top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
@@ -114,57 +102,29 @@ body {
   box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
 }
 
-.box span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  box-sizing: border-box;
-}
 
-.box span:nth-child(1) {
-  transform: rotate(0deg);
-}
-
-.box span:nth-child(2) {
-  transform: rotate(90deg);
-}
-
-.box span:nth-child(3) {
-  transform: rotate(180deg);
-}
-
-.box span:nth-child(4) {
-  transform: rotate(270deg);
-}
-
-.box span:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #50dfdb;
-  animation: animate 4s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left;
+@media (max-width: 1024px) {
+  .image {
+    width: 50vh;
+    height: 30vh;
+    margin-top: 15vh;
   }
-  50% {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  50.1% {
-    transform: scaleX(1);
-    transform-origin: right;
+  .box {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    transform: translate(-60%, -60%);
+    height: 15rem;
+    width: 15rem;
   }
 
-  100% {
-    transform: scaleX(0);
-    transform-origin: right;
+  .slider {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 375px){
+  .image {
+    display: none;
   }
 }

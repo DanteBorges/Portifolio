@@ -2,7 +2,7 @@
 .container {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  width: 40vw;
+  width: 60vw;
   margin-left: 10vw;
   margin-top: 50px;
 }
@@ -22,5 +22,6 @@
   font-size: 40px;
   padding-bottom: 10px;
 }
+
 
 

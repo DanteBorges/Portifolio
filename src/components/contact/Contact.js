@@ -22,16 +22,16 @@ const Contact =() => {
       <form onSubmit={sendEmail}>
         <div className="container_form">
           <div>
-          <input placeholder="Name" type="text" name="name" className="name_form"/>
+          <input placeholder="Name" type="text" name="name" className="inputs"/>
        </div>
         <div>
-          <input  placeholder="E-mail" type="email" name="user_email" />
+          <input  placeholder="E-mail" type="email" name="user_email" className="inputs"/>
         </div>
         <div>
-      <textarea  placeholder="Message" name="message" rows="4" cols="21" />
+      <textarea  placeholder="Message" type="text" name="message" rows="4" cols="21" className="inputs_message" />
       </div>
       <div>
-      <input type="submit" value="Send" />
+      <input type="submit" value="Send" className="btn" />
         </div>
       </div>
       </form>
