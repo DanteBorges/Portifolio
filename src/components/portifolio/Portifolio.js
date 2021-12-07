@@ -11,14 +11,11 @@ const portifolio = () => {
       <a href="https://github.com/DanteBorges" target="_blank">
         <div className="background_icon">
           <div className="icon_github">
-            <FaGithub color="black"/>
+            <FaGithub color="black" />
           </div>
         </div>
       </a>
-
-      <div className="containers_repository">
-        <ImageSlider slides={SliderData} />
-      </div>
+      <ImageSlider slides={SliderData} />
     </div>
   );
 };
