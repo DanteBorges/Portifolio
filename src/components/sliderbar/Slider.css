@@ -122,6 +122,27 @@ body {
     height: 50vh;
   }
 }
+@media (max-width: 1440px){
+  .image {
+    width: 60vh;
+    height: 50vh;
+    margin-top: 10vh;
+  }
+
+  .box {
+    position: absolute;
+    top: 270px;
+    left: 300px;
+    transform: translate(-60%, -60%);
+    height: 25rem;
+    width: 30rem;
+  }
+}
+
+
+
+
+
 
 @media (max-width: 375px){
   .image {

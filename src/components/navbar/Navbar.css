@@ -2,7 +2,6 @@
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
- 
 }
 
 .menu-link {
@@ -38,16 +37,14 @@
 
 /* ----------- Grid part ends ----------------- */
 
-
-
 .menu-link ul li {
   font-size: 2rem;
 }
 
 .menu-link ul li a {
   color: white;
-  font-size:2.0;
-  font-weight:700;
+  font-size: 2;
+  font-weight: 700;
   transition: 0.5s;
 }
 .menu-link ul li:hover > a {
@@ -55,16 +52,12 @@
   transform-origin: right;
   color: red;
   transition: 0.5s;
-  
 }
 
-
- .hamburger-menu {
+.hamburger-menu {
   display: none;
   text-decoration: none;
 }
-
-
 
 .hero-section {
   height: 80vh;
@@ -74,10 +67,6 @@
   flex-direction: column;
 }
 
-
-
-
-
 /* responsive css style  */
 @media (max-width: 1080px) {
   .main-nav {
@@ -85,7 +74,6 @@
     grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
   }
 
-  
   .menu-link ul,
   .menu-template ul {
     height: 8rem;
@@ -95,14 +83,21 @@
   }
 }
 
-
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .main-nav {
     height: 7rem;
     grid-template-columns: 4rem 1fr 3fr 2rem 10rem;
   }
 }
-    
+@media (max-width: 1440px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 1fr 6fr 2rem 10rem;
+  }
+
+}
+
+
 
 
 /* responsive css style  */
@@ -115,9 +110,6 @@
   .menu-link {
     display: none;
   }
-
- 
- 
 
   .mobile-menu-link {
     grid-column: 2/4;
@@ -132,7 +124,6 @@
     grid-column: 2/5;
     align-items: center;
     transform-origin: top;
-
   }
 
   .mobile-menu-link ul {
@@ -154,11 +145,9 @@
     transition: all 2s linear;
   }
 
-  
-
- .hamburger-menu {
+  .hamburger-menu {
     display: block;
-  text-decoration: none;
+    text-decoration: none;
 
     font-size: 2.5rem;
   }
@@ -185,7 +174,6 @@
   .menu-template .hamburger-menu {
     display: block;
     font-size: 2.5rem;
-
   }
 }
 
@@ -214,8 +202,7 @@
   .menu-template .hamburger-menu {
     display: block;
     font-size: 2.5rem;
-  text-decoration: none;
-
+    text-decoration: none;
   }
 
   /* hero section  */
