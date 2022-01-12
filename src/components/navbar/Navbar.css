@@ -2,7 +2,7 @@
   background: linear-gradient(
     90deg,
     #f86b0d31 0%,
-    rgba(252, 186, 63, 0.205) 100%
+    #fcba3f34 100%
   );
   height: 80px;
   display: flex;
@@ -59,7 +59,7 @@
     transition: all 0.5s ease;
   }
   .nav-menu.active {
-    background-color: #6668f4;
+    background-color: #fd7b25;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -72,7 +72,7 @@
     display: table;
   }
   .nav-links:hover {
-    background: #7577fa;
+    background: #ad7f41;
     border-radius: 0;
   }
  
