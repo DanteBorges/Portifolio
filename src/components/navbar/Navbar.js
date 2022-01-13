@@ -1,49 +1,37 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 
-import { GiHamburgerMenu } from "react-icons/gi";
+class Navbar extends Component {
+  state = { clicked: false };
 
-import { NavLink } from "react-router-dom";
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
 
-const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
-
-  return (
-    <>
-      <nav className="main-nav">
- 
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
-          <ul>
-            <li onClick={() => setShowMediaIcons(!showMediaIcons)}> 
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <NavLink to="/about">About Me</NavLink>
-            </li>
-            <li onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <NavLink to="/portfolio">Portfolio</NavLink>
-            </li>
-            <li onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
+  render() {
+    return (
+      <nav className="navbar-items">
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </div>
-
-        <div className="menu-template">
-          <div className="hamburger-menu">
-            <a  href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu color="#000" />
-            </a>
-          </div>
-        </div>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link className="nav-links" to={item.url}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
-
-
-    </>
-  );
-};
+    );
+  }
+}
 
 export default Navbar;
