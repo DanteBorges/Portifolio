@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "./components/hero/Hero"
 import Footer from "./components/footer/Footer";
 import About from './components/about/About';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Portifolio from './components/portifolio/Portifolio';
 import Contact from './components/contact/Contact';
 
