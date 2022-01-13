@@ -1,25 +1,38 @@
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <ul className="social_list">
-        <a href="https://www.instagram.com/danielborggs/" target="_blank">
-          <li>
-            <FaInstagram />
+        <ul class="icon-list">
+          <li class="icon-item">
+            <a
+              href="https://www.instagram.com/danielborggs/"
+              target="_blank"
+              class="icon-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
-        </a>
-        <a href="https://www.linkedin.com/in/daniel-fborges/" target="_blank">
-          <li>
-            <FaLinkedin />
+          <li class="icon-item">
+            <a
+              href="https://www.linkedin.com/in/daniel-fborges/"
+              target="_blank"
+              class="icon-link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </li>
-        </a>
-        <a href="https://github.com/DanteBorges" target="_blank">
-          <li>
-            <FaGithub  />
+          <li class="icon-item">
+            <a
+              href="https://github.com/DanteBorges"
+              target="_blank"
+              class="icon-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
           </li>
-        </a>
+        </ul>
       </ul>
     </footer>
   );
